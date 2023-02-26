@@ -1,11 +1,11 @@
-About types-urllib3
-===================
+About types-urllib3-feedstock
+=============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/types-urllib3-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/python/typeshed
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/types-urllib3-feedstock/blob/main/LICENSE.txt)
 
 Summary: Typing stubs for urllib3
 

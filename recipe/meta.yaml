@@ -11,13 +11,14 @@ source:
 
 build:
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   number: 0
 
 requirements:
   host:
     - python >=3.6
     - pip
+    - wheel
   run:
     - python >=3.6
 
@@ -33,7 +34,14 @@ about:
   license: Apache-2.0
   # License need to be packaged from upstream
   license_file: LICENSE
+  license_family: Apache
+  description: This is a PEP 561 type stub package for the requests package.
+  dev_url: https://github.com/python/typeshed/tree/main/stubs/urllib3
+  doc_url: https://pypi.org/project/types-urllib3/
 
 extra:
   recipe-maintainers:
     - thewchan
+  # This is a typing package, tests comprise of "do the files exist"
+  skip-lints:
+    - missing_imports_or_run_test_py
